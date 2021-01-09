@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from "react";
+import React, { createContext, useReducer, ReactNode } from "react";
 
 interface IState {}
 
@@ -15,8 +15,7 @@ type IAction = {
 const Store = createContext({} as IContextProps);
 
 function reducer(state: IState, action: IAction): IState {
-  // switch (action.type) {}
-  return state;
+   return state;
 }
 
 const initialState: IState = {};
