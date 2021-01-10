@@ -1,11 +1,13 @@
 import * as React from "react";
 import "./index.css";
 
+import MainScreen from "./components/MainScreen"
+
 import { StateProvider } from "./store";
 
 function App() {
   return <StateProvider>
-    <div></div>
+    <MainScreen/>
   </StateProvider>;
 }
 export default App;

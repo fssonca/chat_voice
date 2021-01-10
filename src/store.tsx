@@ -15,12 +15,16 @@ type IAction = {
 const Store = createContext({} as IContextProps);
 
 function reducer(state: IState, action: IAction): IState {
-   return state;
+  return state;
 }
 
 const initialState: IState = {};
 
-const StateProvider = ({ children }) => {
+type Props = {
+  children: JSX.Element;
+};
+
+const StateProvider = ({ children }: Props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
